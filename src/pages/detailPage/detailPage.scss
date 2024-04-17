@@ -1,0 +1,92 @@
+
+
+.detailPageContainer{
+    display: flex;
+    height: calc(100vh - 100px);
+
+
+
+    .details{
+        flex: 3;
+        height: 100%;
+        overflow: scroll;
+        .wrapper{
+            padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .info{
+                display: flex;
+                justify-content: space-between;
+                .leftContainer{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .title{
+                        font-size: 24px;
+                    }
+
+                    .address{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .rightContainer{
+                    padding: 20px;
+                    width: 120px;
+                    background-color: rgb(235, 235, 166);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    border-radius: 10px;
+                    align-items: center;
+
+                    h5{
+                        font-weight: normal;
+                        font-size: 16px;
+                    }
+                    .avatar{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    .features{
+        flex: 2;
+        background-color: rgb(242, 217, 209);
+        margin-left: -18px;
+        .wrapper{
+            padding: 0 20px;
+
+            .mapView{
+                height: 180px;
+            }
+        }
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .card{
+        background-color: white;
+        border-radius: 8px;
+      
+        display: flex;
+        padding: 12px;
+        gap: 20px
+    }
+
+    .column{
+        flex-direction: column;
+        gap: 24px
+    }
+}

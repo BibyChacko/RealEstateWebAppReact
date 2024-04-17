@@ -1,0 +1,35 @@
+.listingPageContainer{
+    display: flex;
+    height: 100%;
+   
+    .listContainer{
+        flex: 3;
+        max-width: 689px;
+
+        .wrapper{
+            height: 100%;
+            padding-right: 24px;
+            padding-bottom: 40px;
+            overflow-y: scroll;
+            scrollbar-color: yellow white;
+            scrollbar-width: 1px;
+            scroll-behavior: smooth;
+        
+            
+        }
+
+        .itemsListContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          
+        }
+    }
+
+    .mapContainer{
+        flex: 2;
+        background-color: rgb(242, 217, 209);
+        height: 100%;
+    
+    }
+}

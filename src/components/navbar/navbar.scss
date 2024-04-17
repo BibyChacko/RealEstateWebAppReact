@@ -1,0 +1,119 @@
+@import "../../responsive.scss";
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include sm {
+    overflow: hidden;
+  }
+  a {
+    transition: all 0.4s ease;
+    &:hover {
+      scale: 1.02;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  .leftSide {
+    flex: 3;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      span {
+        @include md {
+          display: none;
+        }
+
+        @include sm {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  .rightSide {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    gap: 20px;
+    background-color: rgb(242, 217, 209);
+    height: 100%;
+    align-items: center;
+
+    @include md {
+      background-color: white;
+    }
+
+    @include sm {
+      background-color: white;
+    }
+
+    a {
+      padding: 12px 24px;
+    }
+    .registerButton {
+      background-color: #efef2c;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .menuIcon {
+      display: none;
+      z-index: 999;
+      @include sm {
+        display: inline;
+      }
+
+      img {
+        width: 28px;
+        height: 28px;
+        align-items: center;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      top: 0;
+      transition: all 1s ease-in-out;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      right: 0;
+    
+      @include lg {
+        display: none;
+      }
+      @include sm {
+        display: flex;
+        a {
+          display: initial;
+        }
+      }
+    }
+  }
+}

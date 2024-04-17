@@ -1,0 +1,68 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 10px;
+  h3 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .topSection {
+    input {
+      width: 100%;
+    }
+  }
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+
+    button{
+        width: 80px;
+        height: 40px;
+        background-color: rgb(216, 32, 15);
+        border: none;
+        margin-top: 15px;
+        border-radius: 20px;
+        align-content: center;
+        img{
+            width: 18px;
+            height: 18px;
+
+            &:hover{
+                scale: 1.4;
+    
+            }
+        }
+
+        &:hover{
+            background-color: black;
+            border-radius: 12px;
+
+        }
+    }
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  input,
+  select {
+    width: 100px;
+    padding: 10px;
+    margin-left: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}

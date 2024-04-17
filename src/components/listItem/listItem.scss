@@ -1,0 +1,68 @@
+.itemContainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    .icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+    }
+    img{
+        width: 260px;
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 385px;
+        
+
+        .subTitle{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    
+        .bottomContainer{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            .amenitiesContainer{
+                flex: 3;
+                display: flex;
+                gap: 12px;
+            }
+
+            .actionsContainer{
+                display: flex;
+                gap: 12px;
+                align-items: center;
+
+                .bookmark{
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .btn{
+                    padding: 10px 18px;
+                    background-color: yellow;
+                    color: black;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    border: none;
+                }
+            }
+        }
+
+      
+        
+    }
+
+   
+}
+

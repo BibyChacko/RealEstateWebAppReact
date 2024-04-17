@@ -1,0 +1,71 @@
+@import "../../responsive.scss";
+
+
+.homePageContainer{
+    display:flex;
+    height: 100%;
+    
+
+    .textContainer{
+        flex: 3;
+        display: flex;
+        .wrapper{
+            max-width: 680px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 60px;
+            gap: 25px;
+
+            @include lg{
+                max-width: 600px;
+                padding-right: 40px;
+            }
+
+            @include sm{
+                max-width: 560px;
+                padding-right: 20px;
+                background-image: url("../../../public/bg.png");
+                background-attachment: fixed;
+                background-position-y: -40px;
+                background-repeat: no-repeat;
+
+            }
+
+            @include sm{
+                flex: 1;
+                padding-right: 8px;
+            }
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .statsContainer{
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            gap:30px;
+        }
+    }
+
+    .imgContainer{
+        flex: 2;
+        background-color: rgb(242, 217, 209);
+        padding-left: 12px;
+        position: relative;
+
+        @include sm{
+            display: none;
+        }
+        img{
+            width: 110%;
+            position: absolute;
+            right: -1px;
+
+        }
+       
+      
+    }
+}

@@ -1,0 +1,21 @@
+
+
+.mainLayout{
+    display: flex;
+    gap: 10px;
+
+    .textSection{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+    span{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
